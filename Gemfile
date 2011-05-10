@@ -21,6 +21,11 @@ gem "notifo"
 # campfire notifications
 gem "tinder"
 
+gem 'rubycas-client', :git => 'git@github.com:optimis/rubycas-client.git', :branch => "optimis"
+gem 'rubycas-client-rails', :git => 'git://github.com/optimis/rubycas-client-rails.git', :branch => "optimis"
+gem 'optimis_client', :git => 'git@github.com:optimis/optimis_client.git', :branch => "master"
+gem 'optimis_auth_client', :git => 'git@github.com:optimis/optimis_auth_client.git', :branch => "master"
+
 group :development, :test do
   gem "capybara"
   gem "launchy"

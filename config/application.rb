@@ -40,5 +40,10 @@ module BigTuna
     config.filter_parameters += [:password]
     Haml::Template.options[:ugly] = true
     # config.action_view.javascript_expansions[:defaults] = %w(jquery.min rails application)
+    
+    CAS_CONFIG = YAML.load(File.read("#{Rails.root}/config/rubycas_client.yml"))
+    config.rubycas.logger = Rails.logger
+    config.rubycas.cas_base_url = CAS_CONFIG["cas_base_url"]    
+    RubyCAS::Filter.fake(CAS_CONFIG['stubbed_cas_user']) if CAS_CONFIG['stubbed']    
   end
 end

@@ -1,0 +1,9 @@
+api_key: 1234567890
+stubbed: true
+stub_user:
+  id: 1
+  email: stub@optimiscorp.com
+  first_name: Stub 
+  last_name: Optimis
+secure: false
+service_url: auth.optimis.local

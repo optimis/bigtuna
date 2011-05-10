@@ -21,5 +21,8 @@ BigTuna::Application.routes.draw do
   match "/hooks/build/:hook_name", :to => "hooks#autobuild"
   match "/hooks/build/github/:secure", :to => "hooks#github"
   match "/hooks/build/bitbucket/:secure", :to => "hooks#bitbucket"
+  
+  match "/logout", :to => "application#logout", :as => "logout"
+  
   root :to => "projects#index"
 end

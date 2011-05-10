@@ -20,5 +20,6 @@
         = yield
       %ol#sidebar
         %li= link_to("home", root_path, :class => "black_button")
+        %li= link_to("logout", logout_path, :class => "black_button")
         = yield :sidebar
       #footer

@@ -1,0 +1,3 @@
+cas_base_url: https://sso.optimis.local
+stubbed: true
+stubbed_cas_user: stub@optimiscorp.com
